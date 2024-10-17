@@ -10,7 +10,6 @@ const App = () => {
     const precoAlcool = parseFloat(alcool);
     const precoGasolina = parseFloat(gasolina);
 
-    // Verifica se os valores inseridos são válidos
     if (!isNaN(precoAlcool) && !isNaN(precoGasolina) && precoAlcool > 0 && precoGasolina > 0) {
       const relacao = precoAlcool / precoGasolina;
       if (relacao < 0.7) {
@@ -91,7 +90,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: '#f6f6f6',
     fontWeight: 'bold',
-    textAlign: 'center', // Centraliza o texto
+    textAlign: 'center', 
   },
   label: {
     paddingTop: 5,
@@ -111,7 +110,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 20,
     fontWeight: 'bold',
-    textAlign: 'center', // Centraliza o resultado
+    textAlign: 'center', 
   },
 });
 
